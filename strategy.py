@@ -22,7 +22,7 @@ def make_signal(
     return sig
 
 
-class MyStrategy:
+class Strategy:
     def __init__(self, **kwargs):
         self.symbol = str(kwargs.get("symbol", "BTCUSD")).upper()
         self.quantity = float(kwargs.get("quantity", 0.1))
