@@ -24,7 +24,7 @@ def make_signal(
 
 class Strategy:
     def __init__(self, **kwargs):
-        self.symbol = "NVDA"
+        self.symbol = "NVDAAAAAAAAAAAAAAA"
         self.quantity = float(kwargs.get("quantity", 10))
         self._next_action = "buy"
 
