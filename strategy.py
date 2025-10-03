@@ -25,7 +25,7 @@ def make_signal(
 class Strategy:
     def __init__(self, **kwargs):
         self.symbol = "BTC"
-        self.quantity = float(kwargs.get("quantity", 10))
+        self.quantity = float(kwargs.get("quantity", 0.1))
         self._next_action = "buy"
 
     @staticmethod
