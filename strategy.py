@@ -24,8 +24,8 @@ def make_signal(
 
 class Strategy:
     def __init__(self, **kwargs):
-        self.symbol = "BTC"
-        self.quantity = float(kwargs.get("quantity", 0.1))
+        self.symbol = "NVDA"
+        self.quantity = float(kwargs.get("quantity", 10))
         self._next_action = "buy"
 
     @staticmethod
@@ -34,7 +34,7 @@ class Strategy:
         if data is not None:
             return target, data
         for key, value in bars.items():
-            if "BTC" in key.upper():
+            if "NVDA" in key.upper():
                 return key, value
         return target, None
 
